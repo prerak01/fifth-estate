@@ -1,0 +1,164 @@
+You can do one of the following:
+  1. Deploy a new ballot contract
+  2. Join an existing ballot contract
+  3. Exit
+Which would you like to do? 1
+[15:57:03.319] INFO (82830): deployContract
+[15:57:36.163] INFO (82830): Deployed contract at address: 0200eb9fc9b1fae879f67f51b80200bc9bfefb8f1a16d601e3e8afe54a84b3e06cb9
+
+You can do one of the following:
+  1. Open a new poll
+  2. Vote "Yes"
+  3. Vote "No"
+  4. Close the poll
+  5. Display the current ledger state (known by everyone)
+  6. Display the current private state (known only to this DApp instance)
+  7. Display the current derived state (known only to this DApp instance)
+  8. Exit
+Which would you like to do? 5
+[15:57:43.499] INFO (82830): Current poll state is: 'empty'
+[15:57:43.500] INFO (82830): Current question is: 'none'
+[15:57:43.503] INFO (82830): Current yes count is: 0
+[15:57:43.505] INFO (82830): Current no count is: 0
+[15:57:43.508] INFO (82830): Current sequence is: 1
+[15:57:43.511] INFO (82830): Current poll owner is: '0000000000000000000000000000000000000000000000000000000000000000'
+
+You can do one of the following:
+  1. Open a new poll
+  2. Vote "Yes"
+  3. Vote "No"
+  4. Close the poll
+  5. Display the current ledger state (known by everyone)
+  6. Display the current private state (known only to this DApp instance)
+  7. Display the current derived state (known only to this DApp instance)
+  8. Exit
+Which would you like to do? 7
+[15:57:52.094] INFO (82830): Current poll state is: 'empty'
+[15:57:52.094] INFO (82830): Current question is: ''
+[15:57:52.095] INFO (82830): Current yes count is: 0
+[15:57:52.095] INFO (82830): Current no count is: 0
+[15:57:52.095] INFO (82830): Current sequence is: 1
+[15:57:52.096] INFO (82830): Current poll owner is: 'not you'
+
+You can do one of the following:
+  1. Open a new poll
+  2. Vote "Yes"
+  3. Vote "No"
+  4. Close the poll
+  5. Display the current ledger state (known by everyone)
+  6. Display the current private state (known only to this DApp instance)
+  7. Display the current derived state (known only to this DApp instance)
+  8. Exit
+Which would you like to do? 6
+[15:57:56.433] INFO (82830): Current secret key is: 27d1e12edccd29977cb87266d3b4922b77848ac1244e74b3852b563cdb145833
+
+You can do one of the following:
+  1. Open a new poll
+  2. Vote "Yes"
+  3. Vote "No"
+  4. Close the poll
+  5. Display the current ledger state (known by everyone)
+  6. Display the current private state (known only to this DApp instance)
+  7. Display the current derived state (known only to this DApp instance)
+  8. Exit
+Which would you like to do? 1
+What question do you want to open the poll with? Give a third term to Donald Trump?
+[15:58:20.175] INFO (82830): openPoll: Give a third term to Donald Trump?
+
+You can do one of the following:
+  1. Open a new poll
+  2. Vote "Yes"
+  3. Vote "No"
+  4. Close the poll
+  5. Display the current ledger state (known by everyone)
+  6. Display the current private state (known only to this DApp instance)
+  7. Display the current derived state (known only to this DApp instance)
+  8. Exit
+Which would you like to do? 7
+[15:59:04.627] INFO (82830): Current poll state is: 'open'
+[15:59:04.628] INFO (82830): Current question is: 'Give a third term to Donald Trump?'
+[15:59:04.629] INFO (82830): Current yes count is: 0
+[15:59:04.629] INFO (82830): Current no count is: 0
+[15:59:04.629] INFO (82830): Current sequence is: 1
+[15:59:04.629] INFO (82830): Current poll owner is: 'you'
+
+You can do one of the following:
+  1. Open a new poll
+  2. Vote "Yes"
+  3. Vote "No"
+  4. Close the poll
+  5. Display the current ledger state (known by everyone)
+  6. Display the current private state (known only to this DApp instance)
+  7. Display the current derived state (known only to this DApp instance)
+  8. Exit
+Which would you like to do? 2
+[15:59:10.793] INFO (82830): voteYes
+
+You can do one of the following:
+  1. Open a new poll
+  2. Vote "Yes"
+  3. Vote "No"
+  4. Close the poll
+  5. Display the current ledger state (known by everyone)
+  6. Display the current private state (known only to this DApp instance)
+  7. Display the current derived state (known only to this DApp instance)
+  8. Exit
+Which would you like to do? 7
+[15:59:48.503] INFO (82830): Current poll state is: 'open'
+[15:59:48.504] INFO (82830): Current question is: 'Give a third term to Donald Trump?'
+[15:59:48.504] INFO (82830): Current yes count is: 1
+[15:59:48.505] INFO (82830): Current no count is: 0
+[15:59:48.505] INFO (82830): Current sequence is: 1
+[15:59:48.505] INFO (82830): Current poll owner is: 'you'
+
+You can do one of the following:
+  1. Open a new poll
+  2. Vote "Yes"
+  3. Vote "No"
+  4. Close the poll
+  5. Display the current ledger state (known by everyone)
+  6. Display the current private state (known only to this DApp instance)
+  7. Display the current derived state (known only to this DApp instance)
+  8. Exit
+Which would you like to do? 3
+[15:59:56.295] INFO (82830): voteNo
+
+You can do one of the following:
+  1. Open a new poll
+  2. Vote "Yes"
+  3. Vote "No"
+  4. Close the poll
+  5. Display the current ledger state (known by everyone)
+  6. Display the current private state (known only to this DApp instance)
+  7. Display the current derived state (known only to this DApp instance)
+  8. Exit
+Which would you like to do? 7
+[16:02:27.644] INFO (82830): Current poll state is: 'open'
+[16:02:27.645] INFO (82830): Current question is: 'Give a third term to Donald Trump?'
+[16:02:27.645] INFO (82830): Current yes count is: 1
+[16:02:27.646] INFO (82830): Current no count is: 1
+[16:02:27.646] INFO (82830): Current sequence is: 1
+[16:02:27.647] INFO (82830): Current poll owner is: 'you'
+
+You can do one of the following:
+  1. Open a new poll
+  2. Vote "Yes"
+  3. Vote "No"
+  4. Close the poll
+  5. Display the current ledger state (known by everyone)
+  6. Display the current private state (known only to this DApp instance)
+  7. Display the current derived state (known only to this DApp instance)
+  8. Exit
+Which would you like to do? 4
+[16:02:36.513] INFO (82830): closePoll
+
+You can do one of the following:
+  1. Open a new poll
+  2. Vote "Yes"
+  3. Vote "No"
+  4. Close the poll
+  5. Display the current ledger state (known by everyone)
+  6. Display the current private state (known only to this DApp instance)
+  7. Display the current derived state (known only to this DApp instance)
+  8. Exit
+Which would you like to do?

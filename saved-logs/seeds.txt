@@ -1,0 +1,2 @@
+ Your wallet seed is: 66c321b1a603d28fe96b0f1fd929dcb820a035c04e288192ee12963b069b8d3b
+[12:27:34.121] INFO (24477): Your wallet address is: mn_shield-addr_test1ecxthrfn09wuqdksmqtc075jzf2p7czpud63drpj355l6ml72akqxqqujfmj92cazqa3pashpxkxe37wdm2rgyr66k2qvsfknhnzchhffyzevn3p

@@ -1,0 +1,60 @@
+pragma language_version >= 0.16 && <= 0.18;
+import CompactStandardLibrary;
+
+export enum PollState {
+  OPEN,
+  CLOSED,
+  EMPTY,
+}
+
+export ledger pollOwner: Bytes<32>;
+export ledger question: Maybe<Opaque<"string">>;
+export ledger yesCount: Counter;
+export ledger noCount: Counter;
+export ledger pollState: PollState;
+export ledger sequence: Counter;
+
+constructor() {
+  pollState = PollState.EMPTY;
+  question = none<Opaque<"string">>();
+  sequence.increment(1);
+}
+
+witness localSecretKey(): Bytes<32>;
+
+export circuit openPoll(newQuestion: Opaque<"string">): [] {
+  assert(pollState == PollState.EMPTY, "Poll not available");
+
+  pollOwner = disclose(publicKey(localSecretKey(), sequence as Field as Bytes<32>));
+  question = disclose(some<Opaque<"string">>(newQuestion));
+  pollState = PollState.OPEN;
+}
+
+
+export circuit closePoll(): [] {
+  assert(pollState == PollState.OPEN, "Poll already closed or empty");
+  assert(
+    pollOwner == disclose(publicKey(localSecretKey(), sequence as Field as Bytes<32>)),
+    "Only poll owner can close the poll"
+  );
+  pollState = PollState.CLOSED;
+  sequence.increment(1);
+}
+
+export circuit voteYes(): [] {
+  assert(pollState == PollState.OPEN, "Poll is closed");
+  yesCount.increment(1);
+}
+
+export circuit voteNo(): [] {
+  assert(pollState == PollState.OPEN, "Poll is closed");
+  noCount.increment(1);
+}
+
+export circuit publicKey(sk: Bytes<32>, sequence: Bytes<32>): Bytes<32> {
+  return persistentHash<Vector<3, Bytes<32>>>([
+    pad(32, "ballot:pk:"),
+    sequence,
+    sk
+  ]);
+}
