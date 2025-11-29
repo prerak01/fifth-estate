@@ -1,5 +1,6 @@
 {
   "name": "My Codespace",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "postCreateCommand": "bash .devcontainer/setup.sh"
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand" : "npm run testnet-remote"
 }

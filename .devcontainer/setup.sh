@@ -13,5 +13,4 @@ cd ballot-cli && npm install && npm run build
 sudo docker compose -f proof-server-testnet.yml up -d 
 sudo docker ps 
 
-npm run testnet-remote
 
