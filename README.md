@@ -1,5 +1,9 @@
 ## Setup Instructions
+### [Demo Video](https://drive.google.com/file/d/1s-6PMxLWqfBXe8_58QGl2QyyjfqDPomL/view?usp=sharing)
 ### Install Project Dependencies
+node >=22.5
+docker 
+Midnight Compact Compiler 0.24.0
 ### Compile the Smart Contract
 The Compact compiler generates TypeScript bindings and zero-knowledge circuits from the smart contract source code:
 ### Build the CLI Interface
